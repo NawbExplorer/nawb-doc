@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Carlajs",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.UpdateLog": {
+    "message": "更新日志",
+    "description": "Navbar item with label UpdateLog"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Purchase": {
+    "message": "购买",
+    "description": "Navbar item with label Purchase"
+  },
+  "item.label.More": {
+    "message": "更多",
+    "description": "Navbar item with label More"
+  },
+  "item.label.Lonely - app-manager": {
+    "message": "Lonely - app-manager",
+    "description": "Navbar item with label Lonely - app-manager"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.defaultSidebar.category.Lonely-独立开发者APP管理": {
+    "message": "Lonely-独立开发者APP管理",
+    "description": "The label for category Lonely-独立开发者APP管理 in sidebar defaultSidebar"
+  }
+}

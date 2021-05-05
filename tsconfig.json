@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": [
+      "DOM"
+    ],
+    "noEmit": true,
+    "noImplicitAny": false
+  },
+  "include": [
+    "src/"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "link.title.Community": {
+    "message": "社区",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.Tutorial": {
+    "message": "文档",
+    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+  },
+  "link.title.学习": {
+    "message": "学习",
+    "description": "The title of the footer links column with title=学习 in the footer"
+  },
+  "link.title.Learn": {
+    "message": "学习",
+    "description": "The title of the footer links column with title=Learn in the footer"
+  },
+  "link.title.Other": {
+    "message": "其他",
+    "description": "The title of the footer links column with title=Other in the footer"
+  },
+  "link.item.label.feedback": {
+    "message": "反馈",
+    "description": "The label of footer link with label=feedback linking to /docs/intro"
+  },
+  "link.item.label.help": {
+    "message": "帮助",
+    "description": "The label of footer link with label=help linking to /docs/intro"
+  },
+  "link.item.label.zhihu": {
+    "message": "知乎",
+    "description": "The label of footer link with label=zhihu linking to https://www.zhihu.com/people/mrno-64"
+  },
+  "link.item.label.plugins": {
+    "message": "插件",
+    "description": "The label of footer link with label=plugin linking to /docs/intro"
+  },
+  "copyright": {
+    "message": "Copyright© 2021 HangWang.",
+    "description": "The footer copyright"
+  }
+}

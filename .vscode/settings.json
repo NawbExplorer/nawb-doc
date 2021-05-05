@@ -1,0 +1,23 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.ignoreWords": [
+    "carla",
+    "miao"
+  ],
+  "files.associations": {
+    ".js": "javascript",
+    "*.jsx": "javascriptreact",
+    "*.tsx": "typescriptreact",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.gyp": "python",
+    "mutex": "cpp"
+  }
+}
