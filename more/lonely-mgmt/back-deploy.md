@@ -1,64 +1,25 @@
 ---
-id: lonely-start
-title: 开始
-sidebar_position: 1
-slug: /lonely-start
+id: back-deploy
+title: 后端部署
+sidebar_position: 2
 ---
-
-## Lonely -- 独立开发者的软件管理工具 支付无需签约
-
-:::tip 提示
-
-- **软件为作者自用，虽然开源但不免费 价格为 10 元, 同样也可以赞助，最后支不付支付, 凭个人意愿，注意没有售后！！没有售后！！没有售后！！没有的功能自己加，未写测试 仅仅手动测试过 有问题自己改，提 issue 或者 follow >>[maxcalubur](https://github.com/sewerganger/)<< 等更新。**
-- 如果需要自己改动 你需要了解 nestjs, typeorm 等，同样也可以 PR
-
-体验+购买地址: https://lonely-demo.deskbtm.com/
-
-开源地址: https://github.com/sewerganger/lonely-mgmt
-
-:::
-
-<img
-  src="https://i.loli.net/2021/05/02/H1tRyeIVdFZPsh4.png"
-  alt="2021-04-23 234210.png"
-  style={{ width: 400 }}
-/>
-<div style={{ width: 20, display: "inline-block" }}></div>
-<img
-  src="https://i.loli.net/2021/05/02/l78a4qNGIYKPhyH.png"
-  alt="2021-04-23 234914.png"
-  style={{ width: 400 }}
-/>
-
-## 前言
-
-Lonely 是一个专门为独立开发者解决应用支付, 应用管理等, 所开发的管理工具
-
-### 功能介绍
-
-- 用户登录/注册 单点登录 邮箱验证码修改密码
-- 商家支付 （**支付无需签约**）
-- 初始屏幕通知
-- 更新通知
-- 分享任务
-- 定时备份数据库
-- 订单管理， 用户管理，通知管理， 应用管理
-- 等等...
-
-## 后端部署
 
 ### 环境准备
 
 `nodejs` `redis` `mysql`
 
-最好使用 npm 提前全局安装
+使用 npm 提前全局安装
 
-```
+```bash
 npm i typeorm pm2 -g
+// 安装pm2的日志切片工具(可选)
+pm2 install pm2-logrotate
 ```
+
+[pm2-logrotate 使用方法](https://github.com/keymetrics/pm2-logrotate) 根据情况自行设置
 
 :::warning 注意
-如果本地 pm2 deploy 出现 not found xxx 记得 link node npm pm2
+如果本地 pm2 deploy 出现 not found xxx 记得 link node, npm, pm2
 
 ```bash
 ln -s xxx/xxx/node /usr/bin/node
@@ -84,7 +45,7 @@ npm install
 
 把支付宝生成的 public key 放到 `key/alipay_public.pem`
 
-把支付宝开放平台助手生成的私钥放到 `key/alipay_app_private.pem` 使用 rsa2
+把支付宝开放平台助手生成的私钥放到 `key/alipay_app_private.pem`(使用 rsa2)
 
 注意密钥规范
 
@@ -100,7 +61,7 @@ npm install
 
 postman 中 authorization 有值的就是要带上 token
 
-登录注册接口中 auth 字段为 token 请求时 header 中`Authorization: Bearer + token`
+登录注册接口中 auth 字段为 token 请求时 header 中加上`Authorization: Bearer + token`
 
 ### 配置
 
@@ -114,7 +75,7 @@ postman 中 authorization 有值的就是要带上 token
 
 - 将 https 的公钥和证书放到 key 中 ,并在 `.env.production` 中 添加 `HTTPS_KEY=文件名` `HTTPS_CERT=文件名`
 
-- PM2 部署配置 [PM2 文档](https://pm2.keymetrics.io/docs/usage/deployment/)
+- PM2 部署配置 [PM2 部署文档](https://pm2.keymetrics.io/docs/usage/deployment/)
 
 ```javascript title="ecosystem.config.js"
 module.exports = {
@@ -135,7 +96,7 @@ module.exports = {
 };
 ```
 
-4. 数据配置
+- 数据库配置
 
 ```javascript title="ormconfig.js"
 
@@ -159,9 +120,9 @@ case 'production':
 
 ```
 
-5. .env 文件配置
+- .env 文件配置
 
-```shell
+```shell title=".env.xxx"
 REDIS_HOST=localhost
 REDIS_PORT=6379
 REDIS_AUTH=redis密码
@@ -184,7 +145,10 @@ MAILER_PORT=995
 HTTPS_KEY=证书公钥 xxx.key
 HTTPS_CERT=证书 xxx.pem
 
+
 ```
+
+### 部署
 
 :::warning
 windows 上使用 git bash 或者 cygwin
@@ -201,7 +165,3 @@ npm run deploy:setup
 ```bash
 npm run deploy
 ```
-
-4. 前端管理台
-
-vite.config.ts 中修改 `base` url 为你自己的域名

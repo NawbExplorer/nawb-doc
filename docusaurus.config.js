@@ -43,7 +43,10 @@ module.exports = {
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         include: ["**/*.md", "**/*.mdx"],
-        // editUrl: "https://github.com/facebook/docusaurus/edit/master/website/",
+        editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+          // return `https://github.com/facebook/docusaurus/edit/master/website/${versionDocsDirPath}/${docPath}`;
+          return `https://github.com/carla-app`;
+        },
       },
     ],
     [
@@ -126,7 +129,7 @@ module.exports = {
         {
           position: "left",
           label: "Purchase",
-          to: "/purchase",
+          to: "https://www.zhihu.com/people/mrno-64",
         },
         {
           position: "left",
@@ -135,7 +138,11 @@ module.exports = {
           items: [
             {
               label: "Lonely - app-manager",
-              to: "/more/lonely-start",
+              to: "/more/lonely-mgmt/start",
+            },
+            {
+              label: "加入我",
+              to: "/more/join-me",
             },
           ],
         },
@@ -155,7 +162,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/carla-app",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
@@ -204,7 +211,7 @@ module.exports = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/carla-app",
             },
           ],
         },
@@ -229,8 +236,6 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         pages: {
           remarkPlugins: [

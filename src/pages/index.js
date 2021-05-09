@@ -8,13 +8,13 @@ import styles from "./index.module.css";
 import clsx from "clsx";
 
 function Home() {
-  const context = useDocusaurusContext();
-  const {
-    siteConfig: { customFields = {}, tagline, npmPluginsUrl } = {},
-  } = context;
-  console.log();
+  const { siteConfig } = useDocusaurusContext();
+
   return (
-    <Layout title={tagline} description={customFields.description}>
+    <Layout
+      title={siteConfig.tagline}
+      description={siteConfig.customFields.description}
+    >
       <main>
         <div className={styles.hero}>
           <div className={styles.heroInner}>
@@ -48,7 +48,7 @@ function Home() {
               </Link>
               <Link
                 className="button button--secondary button--outline"
-                to={customFields.npmPluginsUrl}
+                to={siteConfig.customFields.npmPluginsUrl}
               >
                 <Translate id="homepage.hero.plugins">Plugins</Translate>
               </Link>
