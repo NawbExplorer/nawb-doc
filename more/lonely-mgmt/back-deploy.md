@@ -98,6 +98,8 @@ module.exports = {
 
 - 数据库配置
 
+手动在 mysql 里创建好对应的 database
+
 ```javascript title="ormconfig.js"
 
 case 'production':
