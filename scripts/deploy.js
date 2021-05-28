@@ -35,12 +35,12 @@ async function buildDemo() {
 }
 
 (async function name() {
-  const spinner = ora("building demo...").start();
+  const spinner = ora("building docs...").start();
   await buildDemo();
   spinner.stop();
   spinner.clear();
   console.log("build Success");
-  spinner.start("deploying demo...");
+  spinner.start("deploying docs...");
   await publish();
   spinner.stop();
   spinner.clear();

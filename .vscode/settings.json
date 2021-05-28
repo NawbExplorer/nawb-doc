@@ -19,5 +19,8 @@
     "*.wxs": "javascript",
     "*.gyp": "python",
     "mutex": "cpp"
-  }
+  },
+  "i18n-ally.localesPaths": [
+    "i18n"
+  ]
 }
