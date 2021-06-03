@@ -47,5 +47,5 @@ async function publish() {
 ```
 
 ```bash title="部署"
-npm run deploy deploy:production
+npm run deploy:production
 ```
