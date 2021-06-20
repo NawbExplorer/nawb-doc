@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2021 
+ *   All rights reserved.
+ */
 const baseUrl = process.env.BASE_URL || "/";
 const npmPluginsUrl =
   "https://www.npmjs.com/search?q=keywords%3Acarla-plugin%20deskbtm%20carlajs";
