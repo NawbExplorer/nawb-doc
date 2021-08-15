@@ -8,10 +8,12 @@ sidebar_position: 1
 
 :::tip 提示
 
-- **软件为作者自用，虽然开源但不免费 价格为 10 元, 同样也可以赞助，最后支不付支付, 凭个人意愿，注意没有售后！！没有售后！！没有售后！！没有的功能自己加，未写测试 仅仅手动测试过 有问题自己改，提 issue 或者 follow >>[maxcalubur](https://github.com/sewerganger/)<< 等更新。**
-- 如果需要自己改动 你需要了解 nestjs, typeorm 等，同样也可以 PR
+- **自用，价格 10 元, 同样也可以赞助, 凭个人意愿，注意没有售后！！没有售后！！没有售后！！没有的功能自行添加，仅手动测试过 有问题自己修改，提 issue 或者 follow >>[maxcalubur](https://github.com/sewerganger/)<< 等更新。**
+- 如果需要自己改动 你需要了解 nestjs, typeorm 等，欢迎 PR
 
 体验+购买地址: https://lonely-demo.deskbtm.com/
+
+备用地址：https://lonely-demo-dashboard-me5pzhqlo-deskbtm.vercel.app
 
 开源地址: https://github.com/sewerganger/lonely-mgmt
 
@@ -41,4 +43,4 @@ Lonely 是一个专门为独立开发者解决应用支付, 应用管理等, 所
 - 分享任务
 - 定时备份数据库
 - 订单管理， 用户管理，通知管理， 应用管理
-- 等等...
+- ...

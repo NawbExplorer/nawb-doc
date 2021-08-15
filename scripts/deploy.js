@@ -3,23 +3,27 @@ var { exec } = require("child_process");
 var ora = require("ora");
 
 async function publish() {
-  ghpages.publish(
-    "build",
-    {
-      branch: "master",
-      repo: "https://e.coding.net/deskbtm/carla/carla-doc-site.git",
-      message: "Auto-generated commit",
-      user: {
-        name: "sewerganger",
-        email: "wanghan9423@outlook.com",
+  return new Promise((resolve, reject) => {
+    ghpages.publish(
+      "build",
+      {
+        branch: "master",
+        repo: "https://github.com/sewerganger/nawb-doc.git",
+        message: "Auto-generated commit",
+        user: {
+          name: "maxcalibur",
+          email: "wanghan9423@outlook.com",
+        },
       },
-    },
-    (err) => {
-      if (err) {
-        throw err;
+      (err) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve();
+        }
       }
-    }
-  );
+    );
+  });
 }
 
 async function buildDemo() {
@@ -41,7 +45,9 @@ async function buildDemo() {
   spinner.clear();
   console.log("build Success");
   spinner.start("deploying docs...");
-  await publish();
+  await publish().catch((err) => {
+    console.error("Error:", err);
+  });
   spinner.stop();
   spinner.clear();
   console.log("deploy Success");
