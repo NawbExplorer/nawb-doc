@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Lonely -- 独立开发者的软件管理工具 支付无需签约
 
-:::tip 提示
+<!-- :::tip 提示
 
 - **自用，价格 10 元, 同样也可以赞助, 凭个人意愿，注意没有售后！！没有售后！！没有售后！！没有的功能自行添加，仅手动测试过 有问题自己修改，提 issue 或者 follow >>[maxcalubur](https://github.com/sewerganger/)<< 等更新。**
 - 如果需要自己改动 你需要了解 nestjs, typeorm 等，欢迎 PR
@@ -17,7 +17,7 @@ sidebar_position: 1
 
 开源地址: https://github.com/sewerganger/lonely-mgmt
 
-:::
+::: -->
 
 <img
 src="https://i.loli.net/2021/05/02/H1tRyeIVdFZPsh4.png"

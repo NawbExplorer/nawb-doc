@@ -8,10 +8,10 @@ async function publish() {
       "build",
       {
         branch: "master",
-        repo: "https://github.com/sewerganger/nawb-doc.git",
+        repo: "https://github.com/Nawbc/nawb-doc.git",
         message: "Auto-generated commit",
         user: {
-          name: "maxcalibur",
+          name: "Nawbc",
           email: "wanghan9423@outlook.com",
         },
       },

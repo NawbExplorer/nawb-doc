@@ -139,7 +139,7 @@ PAYMENT_APPID=支付宝应用的appid
 OWNER_NAME=用于登录管理台
 OWNER_PASSWORD=用于登录管理台
 
-#推荐使用163 不要用outlook 微软的安全机制太严格了 记得前去相应邮箱开启POP3/SMTP服务
+#推荐使用163 Outlook的安全机制严格不推荐 记得前去相应邮箱开启POP3/SMTP服务
 MAILER_NAME=邮箱服务用户名
 MAILER_PASSWORD=邮箱服务密码
 MAILER_PORT=995
