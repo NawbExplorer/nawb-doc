@@ -8,15 +8,15 @@ const npmPluginsUrl =
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "Carlajs",
+  title: "Nawb",
   tagline: "首页",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.svg",
   organizationName: "deskbtm",
-  projectName: "Carlajs",
+  projectName: "Nawb",
   baseUrl,
   baseUrlIssueBanner: true,
   customFields: {
@@ -37,7 +37,7 @@ module.exports = {
   },
   themes: ["@docusaurus/theme-live-codeblock"],
   plugins: [
-    "plugin-image-zoom",
+    "docusaurus-plugin-image-zoom",
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -96,7 +96,16 @@ module.exports = {
       trackingID: "UA-196075244-1",
       anonymizeIP: true,
     },
-    zoomSelector: ".markdown img",
+    zoom: {
+      selector: '.markdown > img',
+      config: {
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        }
+      }
+    },
     colorMode: {
       defaultMode: "light",
       disableSwitch: false,
@@ -108,11 +117,11 @@ module.exports = {
     },
     navbar: {
       hideOnScroll: true,
-      title: "Carlajs",
+      title: "Nawb",
       logo: {
         alt: "Docusaurus Logo",
-        src: "img/carla.svg",
-        srcDark: "img/carla.svg",
+        src: "img/nawb-light.svg",
+        srcDark: "img/nawb-dark.svg",
       },
       items: [
         {

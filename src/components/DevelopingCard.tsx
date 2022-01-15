@@ -2,7 +2,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import React, { FC } from "react";
 import Link from "@docusaurus/Link";
 
-export const DevelopingTip: FC = function () {
+export const DevelopingCard: FC = function () {
   return (
     <div style={{ width: "100%", textAlign: "center" }}>
       <h1>施工中...🚧🚧🚧</h1>

@@ -13,7 +13,7 @@ function Home() {
   return (
     <Layout
       title={siteConfig.tagline}
-      description={siteConfig.customFields.description}
+      description={siteConfig.customFields.description as string}
     >
       <main>
         <div className={styles.hero}>
@@ -48,7 +48,7 @@ function Home() {
               </Link>
               <Link
                 className="button button--secondary button--outline"
-                to={siteConfig.customFields.npmPluginsUrl}
+                to={siteConfig.customFields.npmPluginsUrl as string}
               >
                 <Translate id="homepage.hero.plugins">Plugins</Translate>
               </Link>

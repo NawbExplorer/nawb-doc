@@ -5,7 +5,7 @@
   },
   "link.item.label.Tutorial": {
     "message": "文档",
-    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+    "description": "The label of footer link with label=Tutorial linking to /docs"
   },
   "link.item.label.Blog": {
     "message": "Blog",
@@ -13,7 +13,7 @@
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/carla-app"
   },
   "link.title.学习": {
     "message": "学习",
@@ -41,7 +41,7 @@
   },
   "link.item.label.plugins": {
     "message": "插件",
-    "description": "The label of footer link with label=plugin linking to /docs/intro"
+    "description": "The label of footer link with label=plugins linking to https://www.npmjs.com/search?q=keywords%3Acarla-plugin%20deskbtm%20carlajs"
   },
   "copyright": {
     "message": "Copyright© 2021 HangWang.",

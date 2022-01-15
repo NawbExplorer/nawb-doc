@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "Carlajs",
+    "message": "Nawb",
     "description": "The title in the navbar"
   },
   "item.label.Docs": {
@@ -26,5 +26,9 @@
   "item.label.Lonely - app-manager": {
     "message": "Lonely - app-manager",
     "description": "Navbar item with label Lonely - app-manager"
+  },
+  "item.label.加入我": {
+    "message": "加入我",
+    "description": "Navbar item with label 加入我"
   }
 }
