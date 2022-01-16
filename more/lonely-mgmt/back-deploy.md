@@ -4,7 +4,7 @@ title: 后端部署
 sidebar_position: 2
 ---
 
-### 环境准备 {#环境准备} {#环境准备-环境准备}
+### 环境准备
 
 `nodejs` `redis` `mysql`
 
@@ -33,7 +33,7 @@ cd lonely-manager
 npm install
 ```
 
-### 开通支付宝当面付 {#开通支付宝当面付} {#开通支付宝当面付-开通支付宝当面付}
+### 开通支付宝当面付
 
 **注意:** 如果没有营业执照 当面付会按 0.6%收取服务费率
 
@@ -51,7 +51,7 @@ npm install
 
 ---
 
-### 接口 {#接口} {#接口-接口}
+### 接口
 
 用 postman 打开`app-shop（doc）.postman_collection.json`文件
 接口中有(admin) 的为管理台
@@ -63,7 +63,7 @@ postman 中 authorization 有值的就是要带上 token
 
 登录注册接口中 auth 字段为 token 请求时 header 中加上`Authorization: Bearer + token`
 
-### 配置 {#配置} {#配置-配置}
+### 配置
 
 :::caution 注意
 
@@ -150,7 +150,7 @@ HTTPS_CERT=证书 xxx.pem
 
 ```
 
-### 部署 {#部署} {#部署-部署}
+### 部署
 
 :::warning
 windows 上使用 git bash 或者 cygwin

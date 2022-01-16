@@ -22,7 +22,6 @@ module.exports = {
   customFields: {
     npmPluginsUrl,
   },
-
   i18n: {
     defaultLocale: "zh-cn",
     locales: ["zh-cn"],
@@ -82,6 +81,14 @@ module.exports = {
       },
     ],
     [
+      "@docusaurus/plugin-sitemap",
+      {
+        changefreq: "weekly",
+        priority: 0.5,
+        trailingSlash: false,
+      },
+    ],
+    [
       "@docusaurus/plugin-ideal-image",
       {
         quality: 70,
@@ -97,14 +104,14 @@ module.exports = {
       anonymizeIP: true,
     },
     zoom: {
-      selector: '.markdown > img',
+      selector: ".markdown > img",
       config: {
         // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
         background: {
-          light: 'rgb(255, 255, 255)',
-          dark: 'rgb(50, 50, 50)'
-        }
-      }
+          light: "rgb(255, 255, 255)",
+          dark: "rgb(50, 50, 50)",
+        },
+      },
     },
     colorMode: {
       defaultMode: "light",
@@ -119,9 +126,11 @@ module.exports = {
       hideOnScroll: true,
       title: "Nawb",
       logo: {
-        alt: "Docusaurus Logo",
+        alt: "Nawb Logo",
         src: "img/nawb-light.svg",
         srcDark: "img/nawb-dark.svg",
+        width: 44,
+        height: 44,
       },
       items: [
         {
@@ -184,6 +193,7 @@ module.exports = {
     },
     footer: {
       style: "dark",
+      copyright: `Copyright© ${new Date().getFullYear()} Wang Han.`,
       links: [
         {
           title: "Learn",
@@ -229,7 +239,6 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright© ${new Date().getFullYear()} HangWang.`,
     },
   },
   presets: [

@@ -3,7 +3,8 @@ import Link from "@docusaurus/Link";
 import Translate, { translate } from "@docusaurus/Translate";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import Layout from "@theme/Layout";
+// import Layout from "@theme/Layout";
+import Layout from "@site/src/components/Layout";
 import styles from "./index.module.css";
 import clsx from "clsx";
 

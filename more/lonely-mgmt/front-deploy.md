@@ -6,7 +6,7 @@ sidebar_position: 4
 
 管理台仓库: [https://github.com/sewerganger/lonely-mgmt-dashboard](https://github.com/sewerganger/lonely-mgmt-dashboard)
 
-### 配置 {#配置} {#配置-配置} {#配置-配置-配置-配置} {#配置-配置-配置-配置-配置-配置-配置-配置}
+### 配置
 
 - .env.xxxx 配置
 

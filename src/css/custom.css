@@ -1,6 +1,17 @@
+/* @font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.woff2") format("woff2");
+} */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
 :root {
   --ifm-color-primary: #000000;
   --ifm-color-secondary: #ffffff;
+  --ifm-color-content: var(--ifm-color-gray-800);
+  --ifm-font-family-base: "Inter", sans-serif, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 html a {
@@ -48,6 +59,34 @@ html[data-theme="dark"] .header-github-link:before {
   --ifm-font-color-base: var(--ifm-color-secondary);
 }
 
-.tabs__item {
-  align-items: center;
+.navbar__brand {
+  margin: unset;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-width: 105px;
+  margin-left: -52.5px;
+  margin-top: -22px;
+}
+
+.navbar__brand .navbar__logo {
+  width: 44px;
+  height: 44px;
+}
+
+.navbar__brand .navbar__title {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 996px) {
+  .navbar__brand {
+    right: 0;
+    left: unset;
+    margin-right: 10px;
+  }
+}
+
+.navbar-sidebar__brand .navbar__brand {
+  display: none;
 }
