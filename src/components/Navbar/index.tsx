@@ -9,7 +9,6 @@ import React, { useCallback, useState, useEffect } from "react";
 import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
 import SearchBar from "@theme/SearchBar";
-import Toggle from "@theme/Toggle";
 import useThemeContext from "@theme/hooks/useThemeContext";
 import {
   useThemeConfig,
@@ -25,7 +24,8 @@ import NavbarItem, { Props as NavbarItemConfig } from "@theme/NavbarItem";
 import Logo from "@theme/Logo";
 import IconMenu from "@theme/IconMenu";
 import IconClose from "@theme/IconClose";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
+import DarkModeToggle from "react-dark-mode-toggle";
 
 // retrocompatible with v1
 const DefaultNavItemPosition = "right";
@@ -89,7 +89,7 @@ function useColorModeToggle() {
   } = useThemeConfig();
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   const toggle = useCallback(
-    (e) => (e.target.checked ? setDarkTheme() : setLightTheme()),
+    (e) => (e ? setDarkTheme() : setLightTheme()),
     [setLightTheme, setDarkTheme]
   );
   return { isDarkTheme, toggle, disabled: disableSwitch };
@@ -170,10 +170,11 @@ function NavbarMobileSidebar({
           titleClassName="navbar__title"
         /> */}
         {!colorModeToggle.disabled && (
-          <Toggle
+          <DarkModeToggle
             className={styles.navbarSidebarToggle}
-            checked={colorModeToggle.isDarkTheme}
             onChange={colorModeToggle.toggle}
+            checked={colorModeToggle.isDarkTheme}
+            size={50}
           />
         )}
         <button
@@ -248,6 +249,11 @@ function Navbar(): JSX.Element {
       })}
     >
       <div className="navbar__inner">
+        <Logo
+          className="navbar__brand"
+          imageClassName="navbar__logo"
+          titleClassName="navbar__title"
+        />
         <div className="navbar__items">
           {(items?.length > 0 || activeDocPlugin) && (
             <button
@@ -265,22 +271,16 @@ function Navbar(): JSX.Element {
             <NavbarItem {...item} key={i} />
           ))}
         </div>
-        <Logo
-          className="navbar__brand"
-          imageClassName="navbar__logo"
-          titleClassName="navbar__title"
-        />
-        {/* <div className="navbar__brand__custom">
-        </div> */}
         <div className="navbar__items navbar__items--right">
           {rightItems.map((item, i) => (
             <NavbarItem {...item} key={i} />
           ))}
           {!colorModeToggle.disabled && (
-            <Toggle
+            <DarkModeToggle
               className={styles.toggle}
-              checked={colorModeToggle.isDarkTheme}
               onChange={colorModeToggle.toggle}
+              checked={colorModeToggle.isDarkTheme}
+              size={49}
             />
           )}
           {!hasSearchNavbarItem && <SearchBar />}

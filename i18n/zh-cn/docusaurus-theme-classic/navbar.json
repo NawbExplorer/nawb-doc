@@ -23,12 +23,16 @@
     "message": "更多",
     "description": "Navbar item with label More"
   },
-  "item.label.Lonely - app-manager": {
-    "message": "Lonely - app-manager",
-    "description": "Navbar item with label Lonely - app-manager"
-  },
-  "item.label.加入我": {
+  "item.label.join-me": {
     "message": "加入我",
-    "description": "Navbar item with label 加入我"
+    "description": "Navbar item with label join-me"
+  },
+  "item.label.letscollab": {
+    "message": "letscollab",
+    "description": "Navbar item with label letscollab"
+  },
+  "item.label.Version": {
+    "message": "版本",
+    "description": "Navbar item with label Version"
   }
 }

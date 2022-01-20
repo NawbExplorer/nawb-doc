@@ -8,6 +8,10 @@
 /*
 Hide toggle in small viewports
  */
+.toggle {
+  min-width: 55px;
+}
+
 @media (max-width: 996px) {
   .toggle {
     display: none;

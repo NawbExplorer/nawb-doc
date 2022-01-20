@@ -1,0 +1,36 @@
+.navbar__brand {
+  margin: unset;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-width: 105px;
+  margin-left: -52.5px;
+  margin-top: -22px;
+}
+
+.navbar__brand .navbar__logo {
+  width: 44px;
+  height: 44px;
+}
+
+.navbar__brand .navbar__title {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 996px) {
+  .navbar__brand {
+    right: 0;
+    left: unset;
+    margin-right: 10px;
+  }
+}
+
+.dropdown .navbar__link:after {
+  border: unset;
+  background: url(/img/down.svg);
+  background-size: cover;
+  min-width: 15px;
+  min-height: 15px;
+  top: 10px;
+}
