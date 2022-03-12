@@ -17,6 +17,4 @@ const _BubbleCover: FC<BubbleCoverProps> = function (props) {
   );
 };
 
-
-
 export default _BubbleCover;

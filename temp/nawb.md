@@ -33,7 +33,7 @@ tags: [other]
 ### 项目经历
 
 个人的业余工作室 deskbtm https://deskbtm.com/<br />
-创建的两个 organization [deskbtm](https://github.com/deskbtm) [carla-app](https://github.com/carla-app)
+创建的两个 organization [deskbtm](https://github.com/deskbtm) [carla-app](https://github.com/NawbExplorer)
 [Github](https://github.com/sewerganger)
 
 #### 1. carlajs(开发中) 一个强大的跨平台 javascript 脚本应用环境

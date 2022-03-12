@@ -46,7 +46,7 @@ module.exports = {
         routeBasePath: "more",
         editUrl: ({ locale, versionDocsDirPath, docPath }) => {
           // return `https://github.com/facebook/docusaurus/edit/master/website/${versionDocsDirPath}/${docPath}`;
-          return `https://github.com/carla-app`;
+          return `https://github.com/NawbExplorer`;
         },
       },
     ],
@@ -171,7 +171,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/carla-app",
+          href: "https://github.com/NawbExplorer",
           position: "left",
           className: "header-github-link",
           "aria-label": "GitHub repository",
@@ -226,7 +226,7 @@ module.exports = {
     //         },
     //         {
     //           label: "GitHub",
-    //           href: "https://github.com/carla-app",
+    //           href: "https://github.com/NawbExplorer",
     //         },
     //       ],
     //     },
@@ -244,7 +244,7 @@ module.exports = {
           showLastUpdateTime: true,
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: ({ locale, versionDocsDirPath, docPath }) => {
-            return `https://github.com/carla-app`;
+            return `https://github.com/NawbExplorer`;
           },
           lastVersion: "current",
           versions: {
