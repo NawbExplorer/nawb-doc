@@ -136,11 +136,11 @@ module.exports = {
           to: "/docs",
           label: "Docs",
         },
-        {
-          position: "right",
-          label: "Blog",
-          to: "/blog",
-        },
+        // {
+        //   position: "right",
+        //   label: "Blog",
+        //   to: "/blog",
+        // },
         {
           position: "right",
           label: "Purchase",
@@ -149,7 +149,7 @@ module.exports = {
         {
           position: "right",
           label: "letscollab",
-          to: "/more/update-log",
+          to: "https://letscollab.deskbtm.com",
         },
         {
           position: "right",

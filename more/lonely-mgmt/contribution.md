@@ -31,4 +31,4 @@ lonely 会在凌晨两点自动备份到`~/.mysql-bak/YYYY-MM-DD-xxxxx.sql.gz`�
 3. lonely 使用了 husky 每次 commit 前都会 lint 一下
 4. 推荐安装 vscode 插件 `git graph` `Visual Studio Code Commitizen Support`
 
-如果有疑问可以联系本人 微信号`maxcalibur9423`
+如果有疑问可以联系本人 微信号`Nawbc9423`
