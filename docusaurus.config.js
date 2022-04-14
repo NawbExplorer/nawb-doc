@@ -70,11 +70,6 @@ module.exports = {
             rel: "manifest",
             href: "/manifest.json",
           },
-          {
-            tagName: "meta",
-            name: "theme-color",
-            content: "rgb(37, 194, 160)",
-          },
         ],
       },
     ],
